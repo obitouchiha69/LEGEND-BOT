@@ -117,10 +117,10 @@ async def on_afk(event):
         #           afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = (
-            f"Hey!! My master is currently offline... Since when?\n**For** `{total_afk_time}`\n"
+            f"I really can't respond now.\n**For** `{total_afk_time}`\n"
             + f"\n\n__He left a reason BTW🧐__ :-\n{reason}"
             if reason
-            else f"**Heyy!**\n__I am currently unavailable. Since when, you ask? For {total_afk_time} .__\n\nWhen will I be back? Soon __Whenever I feel like coming back__🤧🚶🚶  "
+            else f"**Heyy!**\n__I really can't respond now. For {total_afk_time} .__\n\nPlease wait a while__🤧🚶🚶  "
         )
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
